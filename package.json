@@ -6,9 +6,16 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "animated-number-react": "^0.1.1",
+    "framer-motion": "^1.11.0",
+    "js-sha256": "^0.9.0",
+    "moment": "^2.26.0",
+    "pako": "^1.0.11",
     "react": "^16.13.1",
+    "react-csv-reader": "^3.0.6",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "uuid": "^8.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
