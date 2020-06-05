@@ -1,37 +1,23 @@
-const ADD_TRANSACTION = "ADD_TRANSACTION";
-export const addTransaction = (dispatch) => (transaction) =>
+const createAction = (type) => (dispatch) => (payload) =>
   dispatch({
-    type: ADD_TRANSACTION,
-    payload: transaction,
-  });
-
-const ADD_TRANSACTIONS = "ADD_TRANSACTIONS";
-export const addTransactions = (dispatch) => (transactions) =>
-  dispatch({
-    type: ADD_TRANSACTIONS,
-    payload: transactions,
-  });
-
-const REMOVE_TRANSACTION = "REMOVE_TRANSACTION";
-export const removeTransaction = (dispatch) => (id) =>
-  dispatch({
-    type: REMOVE_TRANSACTION,
-    payload: id,
-  });
-
-const ADD_IMPORT = "ADD_IMPORT";
-export const addImport = (dispatch) => (payload) =>
-  dispatch({
-    type: ADD_IMPORT,
+    type,
     payload,
   });
 
+const ADD_TRANSACTION = "ADD_TRANSACTION";
+export const addTransaction = createAction(ADD_TRANSACTION);
+
+const ADD_TRANSACTIONS = "ADD_TRANSACTIONS";
+export const addTransactions = createAction(ADD_TRANSACTIONS);
+
+const REMOVE_TRANSACTION = "REMOVE_TRANSACTION";
+export const removeTransaction = createAction(REMOVE_TRANSACTION);
+
+const ADD_IMPORT = "ADD_IMPORT";
+export const addImport = createAction(ADD_IMPORT);
+
 const REMOVE_IMPORT = "REMOVE_IMPORT";
-export const removeImport = (dispatch) => (id) =>
-  dispatch({
-    type: REMOVE_IMPORT,
-    payload: id,
-  });
+export const removeImport = createAction(REMOVE_IMPORT);
 
 export default (state, { type, payload }) => {
   switch (type) {
