@@ -74,8 +74,8 @@ const TransactionForm = () => {
       <form onSubmit={onSubmit}>
         <div className="form-control">
           <input
-            type="datetime-local"
-            value={date.format(moment.HTML5_FMT.DATETIME_LOCAL)}
+            type="date"
+            value={date.format(moment.HTML5_FMT.DATE)}
             onChange={(e) => setDate(moment(e.target.value))}
           />
         </div>
