@@ -6,7 +6,6 @@ import AppReducer, {
   addImport,
   removeImport,
 } from "./AppReducer";
-import pako from "pako";
 
 const transactions = (() => {
   try {

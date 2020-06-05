@@ -3,7 +3,6 @@ import Transaction from "./Transaction";
 import { GlobalContext } from "../context/GlobalState";
 import moment from "moment";
 import { motion, AnimatePresence } from "framer-motion";
-import pako from "pako";
 
 const Transactions = () => {
   const [expandedDates, setExpandedDates] = useState({
@@ -88,7 +87,7 @@ const Transactions = () => {
                     <span style={{ flex: 1 }}>{date}</span>
                     <span style={{ flex: 1 }}>
                       {transactions.length} transaction
-                      {transactions.length > 0 ? "s" : ""}
+                      {transactions.length > 1 ? "s" : ""}
                     </span>
                     <span style={{ flex: 1 }}>{monthlyTotal}</span>
                   </span>
