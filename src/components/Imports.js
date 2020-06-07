@@ -34,7 +34,7 @@ const Imports = () => {
             <span style={{ flex: 1 }} title={checksum}>
               {checksum.slice(0, 5)}
             </span>
-            <span style={{ flex: 1 }}>{total}</span>
+            <span style={{ flex: 1 }}>{total.toFixed(2)}</span>
           </li>
         ))}
       </ul>
